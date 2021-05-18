@@ -1,5 +1,7 @@
 # README #
 
+### Using Celery with Django ###
+
 ## Steps to reproduce
 Clone project, create virtualenv and install dependency
 
@@ -17,7 +19,10 @@ Run project, redis, celery beat, celery
 
 ```bash
 ./manage.py runserver
+
 docker-compose up
+
 celery -A settings beat
+
 celery - A settings worker -l INFO --pool=solo
 ```
